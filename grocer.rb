@@ -121,6 +121,9 @@ cart
 
 end #apply_clearance
   
+def get_grocery_total(cart)
+  
+end
 
 
 def checkout(cart, coupons)
@@ -132,6 +135,8 @@ def checkout(cart, coupons)
   else
     grocery_wclearance = apply_clearance(grocery)
   end
+  
+  
   
   
   
