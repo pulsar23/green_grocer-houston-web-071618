@@ -144,9 +144,7 @@ def checkout(cart, coupons)
     grocery_wclearance = apply_clearance(grocery)
   end
   
-  
-  
-  
-  
+  total_sale = get_grocery_total(grocery_wclearance)
+  total_sale
   
 end
