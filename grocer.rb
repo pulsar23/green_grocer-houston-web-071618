@@ -122,7 +122,15 @@ cart
 end #apply_clearance
   
 def get_grocery_total(cart)
-  
+  sum_total = 0.0
+  cart.each do |cart_item, cart_data|
+    puts "cart_item = #{cart_item}"
+    puts "cart_data = #{cart_data}"
+    item_price = cart[cart_item][:price]
+    item_count = cart[cart_item][:count]
+    sum_total = sum_total + (item_price * item_count)
+  end
+  sum_total
 end
 
 
