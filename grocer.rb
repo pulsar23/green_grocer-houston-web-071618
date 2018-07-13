@@ -135,12 +135,9 @@ end
 def checkout(cart, coupons)
   
   grocery = consolidate_cart(cart)
-  if !coupons == nil
-    grocery_wcoupons = apply_coupons(grocery,coupons)
-    grocery_wclearance = apply_clearance(grocery_wcoupons)
-  else
-    grocery_wclearance = apply_clearance(grocery)
-  end
+  grocery_wcoupons = apply_coupons(grocery,coupons)
+  grocery_wclearance = apply_clearance(grocery_wcoupons)
+
   
   total_sale = get_grocery_total(grocery_wclearance)
   total_sale
