@@ -140,6 +140,9 @@ def checkout(cart, coupons)
 
   
   total_sale = get_grocery_total(grocery_wclearance)
+  if total_sale > 100.100
+    total_sale = total_sale * 0.9 # 10% discount applied
+  end
   total_sale
   
 end
